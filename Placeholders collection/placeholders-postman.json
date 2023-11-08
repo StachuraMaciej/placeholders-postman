@@ -97,7 +97,7 @@
 							"\r",
 							"pm.test(\"Should verify content value\", () => {\r",
 							"\r",
-							"    console.log(pm.expect(pm.response.headers.get(\"Server\"));\r",
+							"    pm.expect(pm.response.headers.get(\"Server\")).to.eql(\"cloudflare\");\r",
 							"})"
 						],
 						"type": "text/javascript"
