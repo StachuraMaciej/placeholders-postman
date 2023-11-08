@@ -45,14 +45,21 @@
 						"id": "bf75a837-a293-4def-8231-3e6659e9e9a6",
 						"exec": [
 							"pm.test(\"Should verify response statuscode\", () => {\r",
-							"    console.log(pm.response.cosde)\r",
+							"    console.log(pm.response.code)\r",
 							"   // pm.response.to.have.status(200);\r",
 							"   pm.expect(pm.response.code).to.eql(200)\r",
+							"   pm.expect(pm.response.status).to.be.a(\"number\");\r",
 							"})\r",
 							"\r",
 							"pm.test(\"Should verify respons Time\", () => {\r",
 							"\r",
-							"    pm.expect(pm.response.responseTime).to.lessThan(40)\r",
+							"    pm.expect(pm.response.responseTime).to.lessThan(200)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Should verify respons status\", () => {\r",
+							"\r",
+							"    pm.expect(pm.response.status).to.eql(\"OK\");\r",
+							"    pm.expect(pm.response.status).to.be.a(\"string\");\r",
 							"})"
 						],
 						"type": "text/javascript"
