@@ -48,6 +48,11 @@
 							"    console.log(pm.response.cosde)\r",
 							"   // pm.response.to.have.status(200);\r",
 							"   pm.expect(pm.response.code).to.eql(200)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Should verify respons Time\", () => {\r",
+							"\r",
+							"    pm.expect(pm.response.responseTime).to.lessThan(40)\r",
 							"})"
 						],
 						"type": "text/javascript"
