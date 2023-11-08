@@ -83,6 +83,7 @@
 							"const responseBody = pm.response.json();\r",
 							"responseBody.map(obiekt => {\r",
 							"    pm.expect(obiekt.email).to.include(\"@\");\r",
+							"    console.log(obiekt);\r",
 							"})\r",
 							"})"
 						],
