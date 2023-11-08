@@ -77,6 +77,13 @@
 							"pm.test(\"Should verify response email\", () => {\r",
 							"const responseBody = pm.response.json();\r",
 							"    pm.expect(responseBody[1].email).to.include(\"@\");\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Should verify all response email\", () => {\r",
+							"const responseBody = pm.response.json();\r",
+							"responseBody.map(obiekt => {\r",
+							"    pm.expect(obiekt.email).to.include(\"@\");\r",
+							"})\r",
 							"})"
 						],
 						"type": "text/javascript"
