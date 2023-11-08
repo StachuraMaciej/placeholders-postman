@@ -64,8 +64,13 @@
 							"pm.test(\"Should verify post ID\", () => {\r",
 							"const responseBody = pm.response.json();\r",
 							"console.log(responseBody[0].id)\r",
-							"    pm.expect(responseBody[0].id).to.eql(\"1\");\r",
+							"    pm.expect(responseBody[0].id).to.eql(1);\r",
 							"    pm.expect(responseBody[0].id).to.be.a(\"number\");\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Should verify length of name\", () => {\r",
+							"const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody[1].name).to.have.lengthOf(14);\r",
 							"})"
 						],
 						"type": "text/javascript"
