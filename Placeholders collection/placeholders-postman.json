@@ -158,7 +158,7 @@
 							"\r",
 							"pm.test(\"Enviroment\", () => {\r",
 							"\r",
-							"    const expectedUserName = pm.collectionVariables.get('baseURL');\r",
+							"    const expectedUserName = pm.environment.get('userName');\r",
 							"console.log(expectedUserName);\r",
 							"\r",
 							"})"
