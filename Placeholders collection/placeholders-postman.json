@@ -189,6 +189,23 @@
 		},
 		{
 			"name": "PUT User",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5fd950f1-329e-4ddd-bece-a0214d19ce8e",
+						"exec": [
+							"function generatorEmail() {\r",
+							"\r",
+							"    const randomNumbers = Math.random()* (1000000 - 1) + 1;\r",
+							"\r",
+							"    console.log(randomNumbers);\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "79ef17ad-6627-48ee-ba6c-f9d5ff6f289f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
