@@ -139,6 +139,20 @@
 		},
 		{
 			"name": "POST Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a5c29bc8-c5dd-42a0-b5cc-062e37dee062",
+						"exec": [
+							"pm.test(\"Global\", () => {\r",
+							"    console.log(pm.globals.get('postTitle'));\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "43bf599f-2b55-4122-bc8f-a5a988a3560d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
