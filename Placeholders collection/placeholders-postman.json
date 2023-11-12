@@ -217,7 +217,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"Clementine Bauch\",\r\n    \"username\": \"{{userName}}\",\r\n    \"email\": \"test@test.pl\",\r\n    \"address\": {\r\n        \"street\": \"Douglas Extension\",\r\n        \"suite\": \"Suite 847\",\r\n        \"city\": \"McKenziehaven\",\r\n        \"zipcode\": \"59590-4157\",\r\n        \"geo\": {\r\n            \"lat\": \"-68.6102\",\r\n            \"lng\": \"-47.0653\"\r\n        }\r\n    }\r\n}",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"Clementine Bauch\",\r\n    \"username\": \"{{userName}}\",\r\n    \"email\": \"{{randomEmail}}\",\r\n    \"address\": {\r\n        \"street\": \"Douglas Extension\",\r\n        \"suite\": \"Suite 847\",\r\n        \"city\": \"McKenziehaven\",\r\n        \"zipcode\": \"59590-4157\",\r\n        \"geo\": {\r\n            \"lat\": \"-68.6102\",\r\n            \"lng\": \"-47.0653\"\r\n        }\r\n    }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
